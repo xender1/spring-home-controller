@@ -23,10 +23,14 @@ public class MainErrorController implements ErrorController {
         logger.debug("Request to /error");
 
         Object status = request.getAttribute(RequestDispatcher.ERROR_STATUS_CODE);
+        
         if (status != null) {
             Integer statusCode = Integer.valueOf(status.toString());
             logger.debug("Error code: " + statusCode);
             model.addAttribute("statusCode", statusCode);
+        } else {
+            logger.debug("No error code.");
+            model.addAttribute("statusCode", "No Error Code Found");
         }
 
         return "error";
