@@ -1,0 +1,37 @@
+html {
+    position: relative;
+    min-height: 100%;
+  }
+
+body {
+    background: #43cea2;
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2); 
+    background: linear-gradient(to right, #185a9d, #43cea2);
+    color: #fff;
+    text-align: center;
+
+    margin-bottom: 60px; /* Margin bottom by footer height */
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Set the fixed height of the footer here */
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #222;
+}
+  
+.myMainContainer {
+  background: rgba(34, 34, 34, 0.5);
+  margin-top: 5px;
+}
+
+.ck-dark {
+  background-color: #222 !important;
+}
+
+.ck-loginarea {
+  max-width: 500px !important;
+  margin: auto !important;
+}

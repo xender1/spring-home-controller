@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <div th:replace="fragments/header :: header-css"/>
+
+    <title>About : Home Controller</title>
+</head>
+<body>
+    <div th:replace="fragments/header :: navbar('about')"/>
+
+    <div class="container-fluid">
+    <div class="jumbotron myMainContainer">
+    <h2>About</h2>
+    <hr />
+        
+    </div> <!-- jumbotron -->
+    </div> <!-- container-fluid -->
+
+    <div th:replace="fragments/footer :: bootstrap-js"/>
+</body>
+</html>
